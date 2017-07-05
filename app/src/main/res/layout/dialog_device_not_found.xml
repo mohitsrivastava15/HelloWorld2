@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_grey_border"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_grey_border">
+            <TextView
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:paddingBottom="10dp"
+                android:text="Sensor not found!"
+                android:layout_centerVertical="true"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_centerInParent="true"/>
+            <Button
+                android:id="@+id/btn_closeX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="10dp"
+                android:background="@null"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingRight="10dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="X"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_errorDeviceNotFound"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:textColor="@android:color/black"
+                android:padding="15dp"
+                android:textSize="13dp"
+                android:text="Sorry! Device with macAddress AA:BB:CC:DD:EE:FF:GG could not be found! Please ensure that the sensor is on, the phone is within a distance of 20m and its bluetooth is working!"
+                android:layout_margin="10dp"
+                android:inputType="textMultiLine"
+                android:layout_below="@+id/recyclerview_report_problem">
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_grey_border">
+            <Button
+                android:id="@+id/btn_deviceNotFoundOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="OK"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:theme="@style/ThemeOverlay.ThemeButton" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

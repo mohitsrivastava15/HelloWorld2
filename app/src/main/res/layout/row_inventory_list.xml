@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+    <jp.shts.android.library.TriangleLabelView
+        android:id="@+id/triangle_alert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginStart="-10dp"
+        app:backgroundColor="@color/colorPrimaryDark"
+        app:corner="leftTop"
+        app:primaryText="!"
+        app:primaryTextColor="@android:color/white"
+        app:primaryTextSize="14dp"
+        app:secondaryText="01" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
+            <ImageView
+                android:id="@+id/grain_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:paddingRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:weightSum="3">
+                <TextView
+                    android:id="@+id/itemName"
+                    android:textColor="@color/itemName"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <github.nisrulz.stackedhorizontalprogressbar.StackedHorizontalProgressBar
+                    android:id="@+id/stackedhorizontalprogressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:progressDrawable="@drawable/stacked_horizontal_progress"/>
+
+                <TextView
+                    android:id="@+id/macAddress"
+                    android:layout_below="@id/itemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:textColor="@color/colorFont"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+                <TextView
+                    android:id="@+id/lastUpdateTime"
+                    android:textColor="@color/lastUpdateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

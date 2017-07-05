@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "111829724270",
+    "project_id": "zeglabs"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111829724270:android:513308871ec8491f",
+        "android_client_info": {
+          "package_name": "com.zeglabs.mohit.helloworld2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111829724270-5e79fo1j93ba8hdfa6t3a2e46ea4m27f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zeglabs.mohit.helloworld2",
+            "certificate_hash": "C1F46E7D9C35D92D1D57C869741260F24B5D2915"
+          }
+        },
+        {
+          "client_id": "111829724270-8qs53548e6msh3tvc4dfqslvraqd89ou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2xXw9WseKLB7khT60tPCrrLEqjkCRkgM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

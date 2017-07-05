@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E24C60</color>
+    <color name="colorPrimaryDark">#DEB246</color>
+    <color name="colorAccent">#C60F13</color>
+    <color name="colorFont">#C60F13</color>
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="blue_grey_900">#263238</color>
+    <color name="grey">#DDDDDD</color>
+    <color name="greyLight">#EEEEEE</color>
+    <color name="blueLink">#0645AD</color>
+    <color name="black_85">#D8000000</color>
+    <color name="black_85_light">#B4000000</color>
+
+
+    <!-- Settings for OTP -->
+
+    <!-- Settings for progress bar -->
+    <color name="shpbr_primary_progress">#FF4081</color>
+    <color name="shpbr_secondary_progress">#CCCCCC</color>
+
+</resources>

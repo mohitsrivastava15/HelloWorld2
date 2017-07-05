@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zeglabs.mohit.helloworld2.activity.DeviceAddedActivity"
+    tools:showIn="@layout/app_bar_device_added"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="25dp"
+            android:paddingTop="25dp"
+            android:gravity="center">
+            <ImageView
+                android:src="@drawable/ic_device_added"
+                android:layout_width="110dp"
+                android:layout_height="110dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="25dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Device Mac Address"
+                android:textStyle="bold"
+                android:paddingTop="20dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/txt_macAddress"
+                android:layout_width="match_parent"
+                android:text="AA:BB:CC:DD:EE:FF:GG"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/txtTitle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/all_borders"
+            android:weightSum="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_successMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="20dp"
+                android:text="Success!\n\nThe device to track Wheat container has been added successfully. Please press OK to proceed to Home or press Add Another to continue adding another device"
+                android:textColor="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="7"
+                android:padding="3dp"
+                android:weightSum="10">
+                <Button
+                    android:id="@+id/btn_addAnother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="Add Another"
+                    android:background="@color/greyLight"
+                    android:textColor="@color/blue_grey_500"/>
+                <Button
+                    android:id="@+id/btn_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@color/greyLight"
+                    android:text="OK"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="@color/whitegrey"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0">
+            <ImageView
+                android:id="@+id/img_grain"
+                android:src="@drawable/ic_rice"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <TextView
+                android:id="@+id/txt_grain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="Wheat"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"/>
+            <github.nisrulz.stackedhorizontalprogressbar.StackedHorizontalProgressBar
+                android:id="@+id/stackedhorizontalprogressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/stacked_horizontal_progress"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <View style="@style/Divider"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/txt_containerHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="32 cm"
+                        android:textSize="12dp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <View style="@style/Divider"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

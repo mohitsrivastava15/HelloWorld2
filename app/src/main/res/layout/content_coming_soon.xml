@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zeglabs.mohit.helloworld2.activity.ComingSoonActivity"
+    tools:showIn="@layout/app_bar_coming_soon">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:paddingTop="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="ZegLabs logo"
+            android:src="@drawable/zeglabs_logo_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="75dp"
+            android:text="We're working hard to roll this out to you!"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

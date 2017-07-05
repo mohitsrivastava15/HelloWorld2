@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zeglabs.mohit.helloworld2.activity.CalibrateDeviceActivity"
+    tools:showIn="@layout/app_bar_calibrate_device"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_weight="0">
+        <EditText
+            android:id="@+id/txt_containerHeightInput"
+            android:inputType="number"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_alignParentTop="true"
+            android:hint="What is the height of the container (in cm)?"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="17"
+            android:dropDownVerticalOffset="7dp"
+            android:dropDownWidth="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="7dp"
+            android:textColorHint="#cccccc"
+            android:textColor="@color/black"
+            android:layout_weight="4"/>
+        <Button
+            android:id="@+id/btn_clear"
+            android:textColor="@android:color/white"
+            android:text="Clear"
+            android:textSize="14dp"
+            android:background="@null"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:layout_weight="4"/>
+        <Button
+            android:id="@+id/btn_ok"
+            android:textColor="@android:color/white"
+            android:text="OK"
+            android:textSize="14dp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_margin="10dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <View style="@style/Divider"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="OR"
+                        android:textSize="24dp"
+                        android:padding="7dp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <View style="@style/Divider"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/topPanel"
+                android:layout_weight="0"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@color/greyLight"
+                android:orientation="vertical"
+                android:clipToPadding="false"
+                android:clipChildren="false">
+
+                <RelativeLayout
+                    android:id="@+id/topInstruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/all_borders"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Empty the container"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:layout_alignParentTop="true"/>
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle"
+                        android:gravity="center"
+                        android:shadowRadius="10.0"
+                        android:text="1"
+                        android:layout_marginTop="-15dp"
+                        android:layout_marginLeft="-15dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/all_borders"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:layout_alignTop="@id/topInstruction">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Attach the sensor to the cap of the container and close the lid &amp; press calibrate!"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:layout_alignParentTop="true"/>
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle"
+                        android:gravity="center"
+                        android:shadowRadius="10.0"
+                        android:text="2"
+                        android:layout_marginTop="-15dp"
+                        android:layout_marginLeft="-15dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_calibrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calibrate"
+                    android:textSize="20dp"
+                    android:theme="@style/ThemeOverlay.ThemeButton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/transparentOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#95000000"
+            android:visibility="gone">
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

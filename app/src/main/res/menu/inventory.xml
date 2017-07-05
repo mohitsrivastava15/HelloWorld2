@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_shopping_cart"
+        app:actionLayout="@layout/action_bar_notification_icon"
+        app:showAsAction="always"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_shopping_cart_white"
+        android:title="Shopping Cart!" />
+
+    <item android:id="@+id/menu_sensorSyncReading"
+        android:icon="@drawable/ic_menu_refresh"
+        android:title="Sync Sensor Reading"
+        android:alphabeticShortcut="r"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>
